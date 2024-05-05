@@ -1,46 +1,52 @@
-# Text-to-Video Generation using Hugging Face
+# Text to Video Generation using Hugging Face
 
-## Overview
+This repository contains code for generating videos from textual prompts using Hugging Face's diffusers library with the "text-to-video-ms-1.7b" model.
 
-This project explores text-to-video generation using Hugging Face's `diffusers` library, focusing on the "text-to-video-ms-1.7b" model. The provided code snippet demonstrates how to generate a video from a textual prompt, showcasing the integration of natural language processing and computer vision techniques.
+## Table of Contents
+1. [Introduction](#introduction)
+2. [Project Structure](#project-structure)
+3. [Dependencies](#dependencies)
+4. [Usage](#usage)
+5. [Results](#results)
+6. [Contributing](#contributing)
+7. [License](#license)
 
-## How to Run
+## Introduction
 
-1. **Installation**: Ensure you have the required libraries installed. You can install them using pip:
+The goal of this project is to explore text-to-video generation using Hugging Face's diffusers library. The "text-to-video-ms-1.7b" model is utilized to generate videos from textual prompts. This involves implementing a diffusion pipeline to integrate natural language processing and computer vision techniques for video generation.
 
-    ```bash
-    pip install torch diffusers
-    ```
+## Project Structure
 
-2. **Code Usage**: Copy and paste the provided code snippet into your Python environment.
+The repository has the following structure:
 
-3. **Model Loading**: The code snippet loads the "text-to-video-ms-1.7b" model from the Hugging Face model hub. If you haven't downloaded the model before, it will be automatically downloaded during runtime.
 
-4. **Prompt Input**: Modify the `prompt` variable to specify your desired textual prompt. This prompt will be used to generate the corresponding video.
+## Dependencies
 
-5. **Run the Code**: Execute the Python script containing the code snippet. This will generate a video based on the provided textual prompt.
+The following dependencies are required to run the code:
 
-6. **Output**: The generated video will be saved to the specified file path, which you can find in the `video_path` variable.
+- Python 3.x
+- Hugging Face Transformers library
+- PyTorch
+- Other required libraries (specified in requirements.txt)
 
-## Requirements
+Install the dependencies using the following command:
 
-- Python 3.6+
-- torch
-- diffusers
 
-## About Hugging Face and Diffusion
+## Usage
 
-### Hugging Face
+To generate videos from textual prompts, run the following command:
 
-[Hugging Face](https://huggingface.co/) is a platform that provides state-of-the-art models and tools for natural language understanding and generation tasks. It offers a vast repository of pretrained models, including the "text-to-video-ms-1.7b" model used in this project.
 
-### Diffusion Mechanism
+Replace `"Your textual prompt here"` with the desired text prompt.
 
-Diffusion is a process of translating textual descriptions into coherent video sequences. It involves understanding the semantics of the text, identifying relevant visual elements, and synthesizing them into a video format. The `diffusers` library provides tools and utilities to implement diffusion mechanisms efficiently.
+## Results
 
-## Acknowledgments
+The generated videos will be saved in the `results/` directory.
 
-- [Hugging Face](https://huggingface.co/) for providing the pretrained models and libraries.
-- Developers of the `diffusers` library for simplifying the implementation of diffusion mechanisms.
-  
+## Contributing
 
+Contributions are welcome! Please feel free to submit issues or pull requests.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
